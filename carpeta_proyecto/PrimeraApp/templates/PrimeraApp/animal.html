@@ -1,0 +1,8 @@
+<h1>Lista de Animales</h1>
+<ul>
+  {% for a in animales %}
+    <li>{{ a.cuidador}} - {{ a.nombre }} - {{ a.tipo }}</li>
+  {% empty %}
+    <li>No hay animales registrados</li>
+  {% endfor %}
+</ul>

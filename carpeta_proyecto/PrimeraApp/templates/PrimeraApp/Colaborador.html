@@ -1,0 +1,8 @@
+<h1>Lista de Colaboradores</h1>
+<ul>
+  {% for a in colaboradores %}
+    <li>{{ a.nombre }} - {{ a.cargo }} - {{a.fecha_entrada_protectora}}</li>
+  {% empty %}
+    <li>No hay colaboradores registrados</li>
+  {% endfor %}
+</ul>
